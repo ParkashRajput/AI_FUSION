@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-void:    #291C0E;
+  --color-earth:   #6E473B;
+  --color-sand:    #A78D78;
+  --color-mist:    #BEB5A9;
+  --color-cream:   #E1D4C2;
+  --color-surface: #fff8f2;
+
+  --font-display: 'Playfair Display', serif;
+  --font-mono:    'DM Mono', monospace;
+
+  --radius-card:  12px;
+  --radius-input: 8px;
+
+  --max-width-content: 860px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #fff8f2;
+  color: #291C0E;
+  font-family: 'DM Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .label-caps {
+    @apply font-mono text-xs font-medium uppercase;
+    letter-spacing: 0.12em;
+  }
+  .card {
+    background: #E1D4C2;
+    border: 1px solid #BEB5A9;
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .btn-primary {
+    background: #6E473B;
+    color: #E1D4C2;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.15s;
+  }
+  .btn-primary:hover { opacity: 0.88; }
+
+  .btn-secondary {
+    background: transparent;
+    color: #6E473B;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #6E473B;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.15s;
+  }
+  .btn-secondary:hover {
+    background: #6E473B;
+    color: #E1D4C2;
+  }
+}
