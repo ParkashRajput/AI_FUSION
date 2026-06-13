@@ -95,15 +95,6 @@ cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
-
-Set your Anthropic API key as an environment variable:
-
-```bash
-export ANTHROPIC_API_KEY=your_key_here
-```
-
----
-
 ## API endpoints
 
 | Method | Endpoint | Description |
