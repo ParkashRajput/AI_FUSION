@@ -40,7 +40,7 @@ The pipeline runs automatically (or manually with model selection), generates re
 | HTTP client | Axios |
 | Backend | Python (FastAPI) |
 | ML | scikit-learn |
-| LLM insights | Anthropic Claude API |
+| LLM insights | Ollama Gemma4-e2b |
 
 ---
 
@@ -126,5 +126,5 @@ Built in collaboration by:
 
 ## License
 
-Copyright (c) 2026 Parkash Rajput (rajputparkash2005@gmail.com). All rights reserved.  
+Copyright (c) 2026 Parkash Rajput (rajputparkash2005@gmail.com) and Dhruvi Jindal(Dhruvijinda2@gmail.com). All rights reserved.  
 See [LICENSE](./LICENSE) for full terms.
